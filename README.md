@@ -1,5 +1,5 @@
 # tpd-id
-Typo detector for indonesian words. The default dictionary words from [here](https://github.com/mychaelgo/indonesia-wordlist)
+Typo detector for indonesian words. The default dictionary words from [here](https://github.com/mychaelgo/indonesia-wordlist) contains 79.9k words.
 
 If you want to add more words you can add config file at `$HOME/.config/tpd/kamus`. Or you can run this command to add new word to dictionary.
 
