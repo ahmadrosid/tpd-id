@@ -55,11 +55,12 @@ fn main() {
                 Some(mut path) => {
                     path.push(".config");
                     path.push("tpd");
-                    path.push("dictionary");
+                    path.push("kamus");
 
                     let mut file = std::fs::OpenOptions::new()
                         .write(true)
                         .read(true)
+                        .create(true)
                         .append(true)
                         .open(path)
                         .unwrap();
@@ -109,6 +110,7 @@ pub fn detect_typo(file_path: String, show_suggest: bool) {
                     path.push(".config");
                     path.push("tpd");
                     path.push("kamus");
+
                     match std::fs::read_to_string(path) {
                         Ok(file) => {
                             let dictionary = file.clone();
